@@ -53,7 +53,7 @@ wc -l fsocity
 
 Using the following command, we can scrolled through the wordlist to see it’s contents.
 Use 
-``` bash
+```bash
 cat fsocity.dic | more
 ```
 Use the next command to find unique words per line 
